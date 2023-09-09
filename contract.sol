@@ -5,6 +5,8 @@
 /**
  *
  *
+   https://X.com/DrewRoberts
+
    Contract features:
    3% buy tax in tokens burned
    10% sell tax in ETH sent to marketing w/ some sent to founder & lead dev
@@ -1222,7 +1224,7 @@ contract army is ERC20, Ownable {
         address indexed oldWallet
     );
  
-    constructor() ERC20("Drew Roberts Army", "ARMY") {
+    constructor() ERC20("WM Trip to Art Basel", "WM") {
         uniswapV2Router = IUniswapV2Router02(
             0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
         );
@@ -1230,8 +1232,8 @@ contract army is ERC20, Ownable {
  
         uint256 totalSupply = 100_000_000_000 ether;
  
-        maxTransactionAmount = (totalSupply) / 200; // 500,000,000 tokens
-        maxWallet = (totalSupply) / 100;  //1% of total supply (1,000,000,000 tokens)
+        maxTransactionAmount = (totalSupply) / 2000; // 50,000,000 tokens
+        maxWallet = (totalSupply) / 1000;  //1% of total supply (100,000,000 tokens)
         swapTokensAtAmount = (totalSupply * 5) / 10000;
  
         buyMarketingFee = 1;
